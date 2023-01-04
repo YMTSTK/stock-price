@@ -21,7 +21,7 @@ def stock_price():
 
     result = model.predict([list])[0]
 
-    return jsonify({'prediction': str(result)})
+    return jsonify({'error':'false','result': str(result),'message':'Success'})
 
 
 if __name__ == '__main__':
